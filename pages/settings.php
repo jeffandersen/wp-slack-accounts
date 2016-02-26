@@ -7,7 +7,7 @@
 
   <h3>OAuth Settings</h3>
   <form name="slack_login_form" method="post" action="<?php echo str_replace('%7E', '~', $_SERVER['REQUEST_URI']); ?>">
-    <?php foreach ($settings as $key => $title): ?>
+    <?php foreach ($slackAccounts->settings as $key => $title): ?>
     <p><label for="<?= $key; ?>"><strong><?= $title; ?></strong></label><br>
     <input type="text" name="<?= $key; ?>" id="<?= $key; ?>" value="<?php echo $values[$key]; ?>"></p>
     <?php endforeach; ?>

@@ -1,0 +1,6 @@
+{
+  "require": {
+    "php": ">=5.3.33",
+    "rmccue/requests": ">=1.0"
+  }
+}
